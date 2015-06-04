@@ -1,0 +1,29 @@
+<template name="layout">
+  
+  <header class="main">
+    
+    
+    <h1><a href="/"><i class="material-icons logo">&#xE886;</i> TeamFeed</a></h1>
+    
+    {{#if currentUser}}
+    <div class="account">
+      <i class="material-icons">&#xE853;</i>
+      <ul>
+        <li><a href="/profile"><i class="material-icons">person</i> Profile</a></li>
+        <li><a href="#logout" class="logout"><i class="material-icons">eject</i> Log out</a></li>
+      </ul>
+    </div>
+    {{/if}}
+  </header>
+
+  {{#if currentUser}}
+    {{> menu}}
+    <main>{{> yield}}</main>
+
+  {{else}}
+  {{> login}}
+  {{/if}}
+
+  
+  
+</template>

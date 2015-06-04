@@ -1,0 +1,104 @@
+
+#feed {
+  max-width: 500px;
+  margin: 15px auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 95%;
+  padding: 20px;
+
+  h3 {
+    font-size: 1.4em;
+    margin: 0 0 15px;
+  }
+
+  img {
+    max-width: 49%;
+  }
+
+  footer {
+    border-top: 1px solid #eee;
+    height: 3em;
+    margin: 20px -20px -10px;
+    padding: 12px 20px 0;
+
+    input {
+      float: right;
+      width: 90%;
+    }
+
+    .like {
+      color: #999;
+      cursor: pointer;
+      float: left;
+      transition: .3s;
+
+      &:hover,
+      &.liked {
+        color: #26517E;
+      }
+    }
+  }
+}
+
+#add-post {
+  // margin: 0 auto;
+  // padding: 20px;
+
+  textarea {
+    border: none;
+    width: 100%;
+  }
+  i {
+    color: #2a7bbf;
+    color: #999;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .3s;
+
+    &:hover {
+      color: #216095;
+    }
+  }
+  button[type="submit"] {
+    float: right;
+  }
+}
+
+
+  
+.tooltip {
+  display: inline;
+  position: relative;
+}
+
+.tooltip:hover:after {
+  background: #333;
+  background: rgba(0,0,0,.8);
+  border-radius: 5px;
+  bottom: 26px;
+  color: #fff;
+  content: attr(title);
+  left: 20%;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+  width: 220px;
+}
+
+.tooltip:hover:before {
+  border: solid;
+  border-color: #333 transparent;
+  border-width: 6px 6px 0 6px;
+  bottom: 20px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
+}
+

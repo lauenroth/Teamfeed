@@ -1,0 +1,52 @@
+{
+  "name": "chrome-home",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "95fb2e5fdd1ea7e4a420b6ed330e6b08",
+      "css": "sun",
+      "code": 59393,
+      "src": "meteocons"
+    },
+    {
+      "uid": "34e68aa8fbf61f02a748043ccf448a3b",
+      "css": "moon",
+      "code": 59394,
+      "src": "meteocons"
+    },
+    {
+      "uid": "17463471d0f132cee16835507ea51ecf",
+      "css": "cloud",
+      "code": 59395,
+      "src": "meteocons"
+    },
+    {
+      "uid": "d577552bb94bdeb53e6517873481aeea",
+      "css": "rain",
+      "code": 59396,
+      "src": "meteocons"
+    },
+    {
+      "uid": "0f6059e468716a93329821bcbf11220d",
+      "css": "snow",
+      "code": 59397,
+      "src": "meteocons"
+    },
+    {
+      "uid": "c55fdf978f617992b43ee7cbaa6ef87e",
+      "css": "menu",
+      "code": 59392,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "7336247ba3db350dec8d6c0a47cef966",
+      "css": "settings",
+      "code": 59398,
+      "src": "mfglabs"
+    }
+  ]
+}

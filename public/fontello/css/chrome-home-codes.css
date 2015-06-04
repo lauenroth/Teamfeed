@@ -1,0 +1,8 @@
+
+.icon-menu:before { content: '\e800'; } /* '' */
+.icon-sun:before { content: '\e801'; } /* '' */
+.icon-moon:before { content: '\e802'; } /* '' */
+.icon-cloud:before { content: '\e803'; } /* '' */
+.icon-rain:before { content: '\e804'; } /* '' */
+.icon-snow:before { content: '\e805'; } /* '' */
+.icon-settings:before { content: '\e806'; } /* '' */
