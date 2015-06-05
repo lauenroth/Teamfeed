@@ -3,8 +3,9 @@ nav.main {
   bottom: 0;
   color: #fff;
   left: 0;
-  position: absolute;
+  position: fixed;
   top: 50px;
+  transition: .3s;
   width: 175px;
 
   h4 {
@@ -22,11 +23,11 @@ nav.main {
   }
 
   a {
-    border-left: 5px solid #0A1D2D;
     color: #bfccd3;
     display: block;
+    height: 50px;
     line-height: 50px;
-    padding: 0 20px;
+    padding-right: 20px;
     text-decoration: none;
     transition: .3s;
 
@@ -35,42 +36,118 @@ nav.main {
       color: #fff;
     }
     &.active {
-      border-left-color: #E76049;
-      border-left-color: #009FD6;
       color: #fff;
+
+      i {
+        border-left-color: #009FD6;
+      }
     }
 
     i {
+      background-color: #0A1D2D;
+      border-left: 5px solid #0A1D2D;
+      display: block;
+      float: left;
+      height: 50px;
+      line-height: 50px;
       position: relative;
-      top: 5px;
-      margin-right: 5px;
+      text-align: center;
+      width: 50px;
+      z-index: 20;
     }
     
   }
 
 
-  .groups i {
+  .groups a {
 
-    border-radius: 100%;
-    display: inline-block;
-    height: 16px;
-    top: 3px;
-    width: 16px;
+    i {
 
-    &.red {
-      background-color: #F02756;
+      &:before {
+        content: "";
+        display: block;
+        border-radius: 100%;
+        height: 16px;
+        left: 17px;
+        opacity: .7;
+        position: relative;
+        top: 17px;
+        transition: .3s;
+        width: 16px;
+      }
+
+      &.red:before {
+        background-color: #F02756;
+      }
+      &.yellow:before {
+        background-color: #FFE92A;
+      }
+      &.green:before {
+        background-color: #23D639;
+      }
+      &.orange:before {
+        background-color: #FFB52A;
+      }
+      &.purple:before {
+        background-color: #9926C2;
+      }
+      
     }
-    &.yellow {
-      background-color: #FFE92A;
+
+    &:hover i:before {
+      opacity: 1;
     }
-    &.green {
-      background-color: #23D639;
+
+  }
+
+}
+
+@media (max-width: 500px) {
+  nav.main {
+    width: 60px;
+
+    h4 {
+      display: none;
     }
-    &.orange {
-      background-color: #FFB52A;
+    a {
+      padding: 0;
+      position: relative;
+      z-index: 20;
+
+      i {
+        border-left-width: 2px;
+      }
+
+      span {
+        background-color: #0A1D2D;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        left: -50px;
+        min-width: 100px;
+        opacity: 0;
+        padding: 0 10px;
+        position: absolute;
+        top: 0;
+        transition: .3s;
+        z-index: 50;
+      }
+
+      &:hover {
+        span {
+          display: block;
+          left: 100%;
+          opacity: 1;
+          z-index: 10;
+        }
+      }
     }
-    &.purple {
-      background-color: #9926C2;
+    .groups {
+      i {
+        // margin: 0 0 0 5px;
+      }
     }
+  }
+  main {
+    padding-left: 60px;
   }
 }

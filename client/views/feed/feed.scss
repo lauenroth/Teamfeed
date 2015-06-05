@@ -50,11 +50,12 @@
   // margin: 0 auto;
   // padding: 20px;
 
-  textarea {
+  input {
     border: none;
     width: 100%;
   }
-  i {
+  i,
+  label {
     color: #2a7bbf;
     color: #999;
     cursor: pointer;
@@ -64,6 +65,10 @@
     &:hover {
       color: #216095;
     }
+  }
+  input[type="file"] {
+    position: absolute;
+    left: -2000px;
   }
   button[type="submit"] {
     float: right;
